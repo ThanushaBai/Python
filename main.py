@@ -1,16 +1,10 @@
-#for loop        while loop=unlimited , for loop=limited
-import time
+#nested loop
 
-# for i in range(10):
-#     print(i+1)
-#
-# for i in  range (50,100+1,2):
-#     print(i)
-#
-# for i in "thanu":
-#     print(i)
+rows = int(input("how many rows?: "))
+cols = int(input("how many columns?: "))
+symbol =input("enter a symbol to use: ")
 
-for seconds in range(10,0,-1):
-    print(seconds)
-    time.sleep(1)
-print("happy new year!")
+for i in range(rows):
+    for j in range(cols):
+        print(symbol,end=" ")
+    print()
