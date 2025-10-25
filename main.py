@@ -1,12 +1,12 @@
-#if statement
+#logical operators (and ,or, not)
 
-age = int(input("What is your age?: "))
+temp = int(input("what is the temperature outside?:"))
 
-if age ==100:
-    print("your are a century old!")
-elif age >= 18:
-    print("your are an adult!")
-elif age <0:
-    print("your haven't born yet!")
-else:
-    print("your are a child!")
+if temp >= 0 and temp <= 30:
+    print("the temperature is good today!")
+    print("go outside!")
+
+elif temp < 0 or temp > 30:
+    print("the temperature is bad today!")
+    print("stay inside!")
+
