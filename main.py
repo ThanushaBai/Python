@@ -1,12 +1,18 @@
-#tuple
+#set
 
-student = ("t",21,"female")
+utensils = {"spoon","fork","knife"}
+dishes ={"bowl","plate","cup"}
 
-print(student.count("female"))
-print(student.index("female"))
+utensils.remove("spoon")
+utensils.add("spoon")
+utensils.clear()
+utensils.update(dishes)
+dishes.update(utensils)
+dinner_table = utensils.union(dishes)
 
-for x in student:
+print(utensils.difference(dishes))
+print(dishes.difference(utensils))
+print(utensils.intersection(dishes))
+
+for x in dinner_table:
     print(x)
-
-if "female" in student:
-    print("female is pretty!")
