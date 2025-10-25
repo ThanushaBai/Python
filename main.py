@@ -1,10 +1,23 @@
-#nested loop
+#loop control statements
 
-rows = int(input("how many rows?: "))
-cols = int(input("how many columns?: "))
-symbol =input("enter a symbol to use: ")
+#break
+#continue
+#pass
 
-for i in range(rows):
-    for j in range(cols):
-        print(symbol,end=" ")
-    print()
+while True:
+    name = input("What is your name?")
+    if name != "":
+        break
+
+phone_number = "123-456-7890"
+for i in phone_number:
+    if i == "-":
+        continue
+    print(i,end="")
+
+for i in range(1,21):
+
+    if i == 12:
+        pass
+    else:
+        print(i)
