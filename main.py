@@ -1,11 +1,11 @@
-#while loop
+#for loop        while loop=unlimited , for loop=limited
 
-# while 1==1:
-#     print("help! Im stuck in a loop!")
 
-name =None
+for i in range(10):
+    print(i+1)
 
-while not name:
-    name = input("Enter your name: ")
+for i in  range (50,100+1,2):
+    print(i)
 
-print("hello "+name)
+for i in "thanu":
+    print(i)
