@@ -7,4 +7,4 @@ dessert = ["cake", "sweet", "candy" ]
 
 food =[ drinks, dinner, dessert ]
 
-print(food)
+print(food[1][1])
