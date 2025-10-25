@@ -3,9 +3,9 @@
 # while 1==1:
 #     print("help! Im stuck in a loop!")
 
-name =""
+name =None
 
-while len(name)==0:
+while not name:
     name = input("Enter your name: ")
 
 print("hello "+name)
