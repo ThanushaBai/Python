@@ -1,29 +1,17 @@
-#dictionary - collection of unique value pairs
+#index operator [] = gives access to a sequence's element (str,list,tuples)
+
+name = "bro code"
+
+# if(name[0].islower()):
+#     name = name.capitalize()
 
 
-capitals ={'usa':'washington',
-           'india':'new delhi',
-           'china':'chicago',
-           'russia':'moscow'}
+first_name = name[:3].upper()
+last_name = name[4:].lower()
+last_character = name[-2]
 
-capitals.update({"germany":"berlin"})
-capitals.update({'usa':'las vegas'})
+print(first_name)
+print(last_name)
+print(last_character)
 
-capitals.pop('usa')
-capitals.clear()
 
-print(capitals['usa'])
-print(capitals['india'])
-print(capitals['china'])
-print(capitals['russia'])
-
-print(capitals.get('germany')) #none
-print(capitals.get('china'))   #chicago
-
-print(capitals.keys())
-print(capitals.values())
-
-print(capitals.items())
-
-for key, value in capitals.items():
-    print(key, value)
