@@ -1,17 +1,10 @@
-#list
+#2D list
 
-food = ["pizza","burger","cake"]
+drinks = ["coffee", "tea", "milk"]
+dinner = ["pizza" , "cheese" ,"cake"]
+dessert = ["cake", "sweet", "candy" ]
 
-food[0] = "sushi"
 
-print(food[0])
+food =[ drinks, dinner, dessert ]
 
-food.append("ice cream")
-food.remove("cake")
-food.pop()
-food.insert(0,"chicken")
-food.sort()
-food.clear()
-
-for x in food:
-    print(x)
+print(food)
