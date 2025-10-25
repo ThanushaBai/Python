@@ -1,10 +1,12 @@
-#2D list
+#tuple
 
-drinks = ["coffee", "tea", "milk"]
-dinner = ["pizza" , "cheese" ,"cake"]
-dessert = ["cake", "sweet", "candy" ]
+student = ("t",21,"female")
 
+print(student.count("female"))
+print(student.index("female"))
 
-food =[ drinks, dinner, dessert ]
+for x in student:
+    print(x)
 
-print(food[1][1])
+if "female" in student:
+    print("female is pretty!")
