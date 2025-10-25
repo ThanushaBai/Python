@@ -1,18 +1,29 @@
-#set
+#dictionary - collection of unique value pairs
 
-utensils = {"spoon","fork","knife"}
-dishes ={"bowl","plate","cup"}
 
-utensils.remove("spoon")
-utensils.add("spoon")
-utensils.clear()
-utensils.update(dishes)
-dishes.update(utensils)
-dinner_table = utensils.union(dishes)
+capitals ={'usa':'washington',
+           'india':'new delhi',
+           'china':'chicago',
+           'russia':'moscow'}
 
-print(utensils.difference(dishes))
-print(dishes.difference(utensils))
-print(utensils.intersection(dishes))
+capitals.update({"germany":"berlin"})
+capitals.update({'usa':'las vegas'})
 
-for x in dinner_table:
-    print(x)
+capitals.pop('usa')
+capitals.clear()
+
+print(capitals['usa'])
+print(capitals['india'])
+print(capitals['china'])
+print(capitals['russia'])
+
+print(capitals.get('germany')) #none
+print(capitals.get('china'))   #chicago
+
+print(capitals.keys())
+print(capitals.values())
+
+print(capitals.items())
+
+for key, value in capitals.items():
+    print(key, value)
