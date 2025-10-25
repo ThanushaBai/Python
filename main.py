@@ -1,23 +1,17 @@
-#loop control statements
+#list
 
-#break
-#continue
-#pass
+food = ["pizza","burger","cake"]
 
-# while True:
-#     name = input("What is your name?")
-#     if name != "":
-#         break
+food[0] = "sushi"
 
-phone_number = "123-456-7890"
-for i in phone_number:
-    if i == "*":
-        continue
-    print(i,end="")
-#
-# for i in range(1,21):
-#
-#     if i == 12:
-#         pass
-#     else:
-#         print(i)
+print(food[0])
+
+food.append("ice cream")
+food.remove("cake")
+food.pop()
+food.insert(0,"chicken")
+food.sort()
+food.clear()
+
+for x in food:
+    print(x)
