@@ -1,12 +1,11 @@
-#logical operators (and ,or, not)
+#while loop
 
-temp = int(input("what is the temperature outside?:"))
+# while 1==1:
+#     print("help! Im stuck in a loop!")
 
-if not(temp >= 0 and temp <= 30):
-    print("the temperature is bad today!")
-    print("go outside!")
+name =""
 
-elif not(temp < 0 or temp > 30):
-    print("the temperature is good today!")
-    print("stay inside!")
+while len(name)==0:
+    name = input("Enter your name: ")
 
+print("hello "+name)
