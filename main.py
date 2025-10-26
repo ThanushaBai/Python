@@ -1,18 +1,23 @@
-#function = block of code which is executed only when it is called
+#exception handling
 
 
-# def hello(name):
-#     print("hello!"+name)
-#     print("have a nice day!")
-#
-# my_name = "tc"
-# hello(my_name)
+try:
+    numerator = int(input("Enter a number to divide: "))
+    denominator = int(input("Enter a number to divide by: "))
+    result = numerator / denominator
 
+except ZeroDivisionError as e:
+    print(e)
+    print("u cant divide by zero")
 
+except ValueError as e:
+    print(e)
+    print("enter only number plz")
 
-def hello(firstname,lastname,age):
-    print("hello "+firstname+" "+lastname)
-    print("you are "+str(age)+" years old")
-    print("have a nice day")
-
-hello("t","c",21)
+except Exception as e:
+    print(e)
+    print("something went wrong:")
+else:
+    print(result)
+finally:
+    print("this is always execute")
