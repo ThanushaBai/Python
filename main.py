@@ -1,17 +1,18 @@
-#index operator [] = gives access to a sequence's element (str,list,tuples)
-
-name = "bro code"
-
-# if(name[0].islower()):
-#     name = name.capitalize()
+#function = block of code which is executed only when it is called
 
 
-first_name = name[:3].upper()
-last_name = name[4:].lower()
-last_character = name[-2]
+def hello(name):
+    print("hello!"+name)
+    print("have a nice day!")
 
-print(first_name)
-print(last_name)
-print(last_character)
+my_name = "tc"
+hello(my_name)
 
 
+
+# def hello(firstname,lastname,age):
+#     print("hello "+firstname+" "+lastname)
+#     print("you are "+str(age)+" years old")
+#     print("have a nice day")
+#
+# hello("t","c",21)
